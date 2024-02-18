@@ -132,10 +132,11 @@ namespace Battleship
 
             hits[row, col] = true;
 
-            if (grid[row,col] == 1)
+            if (grid[row, col] == 1)
             {
                 ShowHit();
                 IncrementScore();
+                TryEndGame();
             }
             else
             {
@@ -152,11 +153,30 @@ namespace Battleship
                     if (grid[row, col] == 0) continue;
 
                     if (hits[row, col] == false) return;
+               
                 }
             }
 
             winLabel.SetActive(true);
             CancelInvoke("IncrementTime");
+        }
+
+        public void Restart()
+        {
+            UnselectCurrentCell();
+
+            row = 0;
+            col = 0;
+
+            hits[row,col] = false;
+
+            scoreLabel.text = "Score: 0";
+            time = 0;
+            timeLabel.text = string.Format("{0}:{1}", time / 60, (time % 60).ToString("00"));
+
+            
+
+            SelectCurrentCell();
         }
     }
 }
