@@ -12,16 +12,13 @@ public class HanoiTower : MonoBehaviour
     [SerializeField] private Transform peg2Transform;
     [SerializeField] private Transform peg3Transform;
 
-    [SerializeField] private int[] peg1 = { 1, 2, 3, 4 };
-    [SerializeField] private int[] peg2 = { 0, 0, 0, 0 };
-    [SerializeField] private int[] peg3 = { 0, 0, 0, 0 };
+    [SerializeField] private int currentPeg = 1;
 
-
-    private int currentPeg = 1;
+    [SerializeField] GameObject youWinLabel;
 
 
     [ContextMenu("Move Right")]
-    void moveRight()
+    public void MoveRight()
     {
         if (CanMoveRight() == false) return;
 
@@ -31,7 +28,7 @@ public class HanoiTower : MonoBehaviour
         if (fromIndex == -1) return;
 
         int[] toArray = GetPeg(currentPeg + 1);
-        int toIndex = GetTopNumberIndex(toArray);
+        int toIndex = GetIndexOfFreeSlot(toArray);
 
         if (toIndex == -1) return;
 
@@ -46,7 +43,7 @@ public class HanoiTower : MonoBehaviour
     }
 
     [ContextMenu("Move Left")]
-    void moveLeft()
+    public void MoveLeft()
     {
         if (CanMoveLeft() == false) return;
 
@@ -56,7 +53,7 @@ public class HanoiTower : MonoBehaviour
         if (fromIndex == -1) return;
 
         int[] toArray = GetPeg(currentPeg - 1);
-        int toIndex = GetTopNumberIndex(toArray);
+        int toIndex = GetIndexOfFreeSlot(toArray);
 
         if (toIndex == -1) return;
 
@@ -70,11 +67,42 @@ public class HanoiTower : MonoBehaviour
         disc.SetParent(toPeg);
     }
 
+    public void IncrementPegNumber()
+    {
+        currentPeg++;
+        if(currentPeg > 3)
+        {
+            currentPeg = 3;
+        }
+    }
+
+    public void DecrementPegNumber()
+    {
+        currentPeg--;
+        if (currentPeg < 1)
+        {
+            currentPeg = 1;
+        }
+    }
+
     Transform PopDiscFromCurrentPeg()
     {
         Transform currentPegTransform = GetPegTransform(currentPeg);
         int index = currentPegTransform.childCount - 1;
         Transform disk = currentPegTransform.GetChild(index);
+        if (pegThree[0] ==  1)
+        {
+            if (pegThree[1] == 2)
+            {
+                if (pegThree[2] == 3)
+                {
+                    if (pegThree[3] == 4)
+                    {
+                        youWinLabel.SetActive(true);
+                    }
+                }
+            }
+        }
         return disk;
     }
 
@@ -136,7 +164,7 @@ public class HanoiTower : MonoBehaviour
         return -1;
     }
 
-    int GetIndexOfNextFreeSlot(int[] peg)
+    int GetIndexOfFreeSlot(int[] peg)
     {
 
         for (int i = peg.Length - 1; i >= 0; i--)

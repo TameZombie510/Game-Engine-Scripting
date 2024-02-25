@@ -157,10 +157,10 @@ RectTransform:
   m_Father: {fileID: 1775156721}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: -57}
-  m_SizeDelta: {x: 155, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 450.3279, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &197525583
 MonoBehaviour:
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
-  m_MinHeight: 100
+  m_MinHeight: 250
   m_PreferredWidth: -1
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
@@ -257,8 +257,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 446.69, y: -447.02}
-  m_SizeDelta: {x: 198.6262, y: 144.5531}
+  m_AnchoredPosition: {x: 1001.82275, y: -790.7228}
+  m_SizeDelta: {x: 462.9777, y: 269.3954}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &318278359
 MonoBehaviour:
@@ -303,7 +303,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 318278360}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1809345578}
+        m_TargetAssemblyTypeName: HanoiTower, Assembly-CSharp
+        m_MethodName: DecrementPegNumber
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &318278360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,10 +523,10 @@ RectTransform:
   m_Father: {fileID: 1775156721}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.9265, y: -256.11548}
-  m_SizeDelta: {x: 279.147, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 811.0175, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &403416435
 MonoBehaviour:
@@ -530,7 +542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
-  m_MinHeight: 100
+  m_MinHeight: 250
   m_PreferredWidth: -1
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
@@ -743,10 +755,10 @@ RectTransform:
   m_Father: {fileID: 1775156721}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.0000076, y: -356.12}
-  m_SizeDelta: {x: 333.9868, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 970.3456, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &807030293
 MonoBehaviour:
@@ -762,7 +774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
-  m_MinHeight: 100
+  m_MinHeight: 250
   m_PreferredWidth: -1
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
@@ -817,6 +829,7 @@ GameObject:
   - component: {fileID: 809474518}
   - component: {fileID: 809474520}
   - component: {fileID: 809474519}
+  - component: {fileID: 809474521}
   m_Layer: 5
   m_Name: Peg-3
   m_TagString: Untagged
@@ -841,8 +854,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 596, y: 76}
-  m_SizeDelta: {x: 100, y: 817}
+  m_AnchoredPosition: {x: 1349.8499, y: 184}
+  m_SizeDelta: {x: 233.0899, y: 1522.5972}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &809474519
 MonoBehaviour:
@@ -882,6 +895,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809474517}
   m_CullTransparentMesh: 1
+--- !u!114 &809474521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809474517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 7
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &988648147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,8 +1120,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -192, y: -447.02}
-  m_SizeDelta: {x: 198.6262, y: 144.5531}
+  m_AnchoredPosition: {x: -486.89893, y: -790.7228}
+  m_SizeDelta: {x: 462.9777, y: 269.3954}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1084421693
 MonoBehaviour:
@@ -1127,7 +1166,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1084421694}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1809345578}
+        m_TargetAssemblyTypeName: HanoiTower, Assembly-CSharp
+        m_MethodName: MoveRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1084421694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1419,10 +1470,10 @@ RectTransform:
   m_Father: {fileID: 1775156721}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: -157}
-  m_SizeDelta: {x: 219, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 636.2698, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1421239958
 MonoBehaviour:
@@ -1438,7 +1489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
-  m_MinHeight: 100
+  m_MinHeight: 250
   m_PreferredWidth: -1
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
@@ -1519,8 +1570,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 216, y: -447.02}
-  m_SizeDelta: {x: 198.6262, y: 144.5531}
+  m_AnchoredPosition: {x: 464.1079, y: -790.7228}
+  m_SizeDelta: {x: 462.9777, y: 269.3954}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1563069487
 MonoBehaviour:
@@ -1565,7 +1616,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1563069488}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1809345578}
+        m_TargetAssemblyTypeName: HanoiTower, Assembly-CSharp
+        m_MethodName: IncrementPegNumber
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1563069488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1750,6 +1813,7 @@ GameObject:
   - component: {fileID: 1714889485}
   - component: {fileID: 1714889487}
   - component: {fileID: 1714889486}
+  - component: {fileID: 1714889488}
   m_Layer: 5
   m_Name: Peg-2
   m_TagString: Untagged
@@ -1774,8 +1838,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21, y: 76}
-  m_SizeDelta: {x: 100, y: 817}
+  m_AnchoredPosition: {x: 9.582764, y: 184}
+  m_SizeDelta: {x: 233.0899, y: 1522.5972}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714889486
 MonoBehaviour:
@@ -1815,6 +1879,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714889484}
   m_CullTransparentMesh: 1
+--- !u!114 &1714889488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714889484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 7
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1763441405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1852,8 +1942,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -449.68692, y: -447.02127}
-  m_SizeDelta: {x: 198.6262, y: 144.5531}
+  m_AnchoredPosition: {x: -1087.5408, y: -790.7253}
+  m_SizeDelta: {x: 462.9777, y: 269.3954}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1763441407
 MonoBehaviour:
@@ -1898,7 +1988,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1763441408}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1809345578}
+        m_TargetAssemblyTypeName: HanoiTower, Assembly-CSharp
+        m_MethodName: MoveLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1763441408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1948,6 +2050,7 @@ GameObject:
   - component: {fileID: 1775156721}
   - component: {fileID: 1775156723}
   - component: {fileID: 1775156722}
+  - component: {fileID: 1775156724}
   m_Layer: 5
   m_Name: Peg-1
   m_TagString: Untagged
@@ -1976,8 +2079,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -561, y: 76}
-  m_SizeDelta: {x: 100, y: 817}
+  m_AnchoredPosition: {x: -1347, y: 184}
+  m_SizeDelta: {x: 233.0899, y: 1522.5972}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1775156722
 MonoBehaviour:
@@ -2017,6 +2120,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775156720}
   m_CullTransparentMesh: 1
+--- !u!114 &1775156724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775156720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 7
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1809345573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2029,6 +2158,7 @@ GameObject:
   - component: {fileID: 1809345576}
   - component: {fileID: 1809345575}
   - component: {fileID: 1809345574}
+  - component: {fileID: 1809345578}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2124,3 +2254,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1809345578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809345573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf904c5192bbb4191b066a7b743ec17f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pegOne: 01000000020000000300000004000000
+  pegTwo: 00000000000000000000000000000000
+  pegThree: 00000000000000000000000000000000
+  peg1Transform: {fileID: 1775156721}
+  peg2Transform: {fileID: 1714889485}
+  peg3Transform: {fileID: 809474518}
+  currentPeg: 1
