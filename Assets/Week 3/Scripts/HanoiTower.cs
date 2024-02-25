@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class HanoiTower : MonoBehaviour
@@ -14,6 +15,8 @@ public class HanoiTower : MonoBehaviour
 
     [SerializeField] private int currentPeg = 1;
 
+    [SerializeField] TextMeshProUGUI pegNumberLabel;
+   
     [SerializeField] GameObject youWinLabel;
 
 
@@ -74,6 +77,8 @@ public class HanoiTower : MonoBehaviour
         {
             currentPeg = 3;
         }
+
+        pegNumberLabel.text =  $"Peg: {currentPeg}";
     }
 
     public void DecrementPegNumber()
@@ -83,6 +88,8 @@ public class HanoiTower : MonoBehaviour
         {
             currentPeg = 1;
         }
+
+        pegNumberLabel.text = $"Peg: {currentPeg}";
     }
 
     Transform PopDiscFromCurrentPeg()
