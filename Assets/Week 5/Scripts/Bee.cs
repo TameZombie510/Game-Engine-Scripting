@@ -5,30 +5,16 @@ using DG.Tweening;
 
 public class Bee : MonoBehaviour
 {
-    private Hive Beehive = new();
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private Hive Beehive;
 
     public void Init(Hive hive)
     {
-        hive = Beehive;
+        Beehive = hive;
     }
 
     private void CheckAnyFlower()
     {    
-        Flower[] flower = FindObjectsByType<Flower>(FindObjectsSortMode, 0);
+        Flower[] flower = FindObjectsByType<Flower>(FindObjectsSortMode.None);
         int RandomFlower = Random.Range(0, flower.Length);
         
 
@@ -47,7 +33,7 @@ public class Bee : MonoBehaviour
             //If flower did not return nectar then go check another flower
             if (false)
             {
-                
+                CheckAnyFlower();
             }
         }).SetEase(Ease.Linear);
     }
