@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 namespace Week6
 {
 
-    public class PlayerController : MonoBehaviour
+    public class PlayerController2D : MonoBehaviour
     {
         [SerializeField] float speed = 5.0f;
         [SerializeField] float jumpForce;
@@ -17,9 +17,8 @@ namespace Week6
         private float mouseDeltaY = 0f;
         private float cameraRotX = 0f;
         private int rotDir = 0;
-        private bool grounded;
 
-        PlayerControllerMappings playerMappings;
+        PlayerControllerMappings playerMappings2D;
 
         InputAction move;
         InputAction fire;
@@ -32,16 +31,16 @@ namespace Week6
         {
             rb = GetComponent<Rigidbody>();
 
-            playerMappings = new PlayerControllerMappings();
-            move = playerMappings.Player.Move;
+            playerMappings2D = new PlayerControllerMappings();
+            move = playerMappings2D.Player.Move;
 
-            fire = playerMappings.Player.Fire;
+            fire = playerMappings2D.Player.Fire;
             fire.performed += Fire;
 
-            jump = playerMappings.Player.Jump;
+            jump = playerMappings2D.Player.Jump;
             jump.performed += Jump;
 
-            look = playerMappings.Player.Look;
+            look = playerMappings2D.Player.Look;
         }
 
         private void OnEnable()
@@ -50,8 +49,7 @@ namespace Week6
             fire.Enable();
             jump.Enable();
             look.Enable();
-        }
-
+        }        
 
         private void OnDisable()
         {
@@ -66,17 +64,17 @@ namespace Week6
         // Update is called once per frame
         void Update()
         {
-            HandleHorizontalRotation();
-            HandleVerticalRotation();
+            //HandleHorizontalRotation();
+            //HandleVerticalRotation();
 
         }
 
         void FixedUpdate()
         {
             Vector2 input = move.ReadValue<Vector2>();
-            Vector3 direction = (input.x * transform.right) + (transform.forward * input.y);
+            Vector2 direction = (input.x * transform.right) + (transform.up * input.y);
 
-            transform.position = transform.position + (direction * speed * Time.deltaTime);
+            transform.position += (Vector3)(Time.deltaTime * speed * direction);
         }
 
         void HandleHorizontalRotation()

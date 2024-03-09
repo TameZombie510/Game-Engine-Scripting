@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Hive : MonoBehaviour
 {
+    private Hive instance;
+
     private float honeyProductionRate = 5;
     private float startingNumberOfBees;
     private int nectarAmount;
@@ -13,13 +15,14 @@ public class Hive : MonoBehaviour
 
     [SerializeField] GameObject beePreFab;
     
+    
 
     // Start is called before the first frame update
     void Start()
     {
         for(int i = 0; i < startingNumberOfBees; i++)
         {
-            Instantiate(beePreFab, Bee.Init(Hive());
+            //Instantiate(beePreFab, Bee.Init(instance));
         }
 
     }

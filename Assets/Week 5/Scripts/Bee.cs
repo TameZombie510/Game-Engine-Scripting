@@ -5,16 +5,17 @@ using DG.Tweening;
 
 public class Bee : MonoBehaviour
 {
-    private Hive Beehive;
+    [SerializeField]private Hive Beehive;
 
-    public void Init(Hive hive)
+    public static void Init(Hive hive)
     {
-        Beehive = hive;
+        //Beehive = hive;
     }
 
     private void CheckAnyFlower()
-    {    
-        Flower[] flower = FindObjectsByType<Flower>(FindObjectsSortMode.None);
+    {
+        Flower[] flower = { };
+            //FindObjectsByType<Flower>(FindObjectsSortMode.None);
         int RandomFlower = Random.Range(0, flower.Length);
         
 
