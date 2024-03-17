@@ -123,6 +123,7 @@ namespace Week6
         {
             
             Debug.Log("I jumped");
+         
             rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
         }
     }
