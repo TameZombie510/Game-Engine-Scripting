@@ -21,6 +21,5 @@ public class Spike : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
 }
  

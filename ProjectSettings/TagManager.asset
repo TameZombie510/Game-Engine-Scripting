@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
+  - Spike
+  - Coin
   layers:
   - Default
   - TransparentFX

@@ -10,9 +10,15 @@ public class DoorTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(doorKey.hasKey == true)
+        Week6.PlayerController2D.ResetGame.AddListener(Reset);
+        if (doorKey.hasKey == true)
         {
             DoorSprite.SetActive(false);
         }
+    }
+
+    void Reset()
+    {
+        DoorSprite.SetActive(true);
     }
 }
